@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dvr_api_tests", "dvr_api_tests.csproj", "{4E3F5F18-3745-4205-A2D3-861BBCD54E1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E3F5F18-3745-4205-A2D3-861BBCD54E1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E3F5F18-3745-4205-A2D3-861BBCD54E1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E3F5F18-3745-4205-A2D3-861BBCD54E1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E3F5F18-3745-4205-A2D3-861BBCD54E1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88EAD53D-5C01-46CC-8A57-7F57E854E9CA}
+	EndGlobalSection
+EndGlobal
