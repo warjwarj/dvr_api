@@ -17,13 +17,6 @@ namespace dvr_api_tests
             string? d5 = dvr_api.Utils.getMDVRIdFromMessage("this string is of arbitrary value");
             string? d6 = dvr_api.Utils.getMDVRIdFromMessage(null);
 
-            Console.WriteLine(d1 == null);
-            Console.WriteLine(d2 == null);
-            Console.WriteLine(d3 == null);
-            Console.WriteLine(d4 == null);
-            Console.WriteLine(d5 == null);
-            Console.WriteLine(d6 == null);
-
             Assert.AreEqual(d1, d2, device_id);
             Assert.IsNull(d3, d4, d5, d6);
         }
