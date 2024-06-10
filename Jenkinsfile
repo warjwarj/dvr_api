@@ -7,8 +7,8 @@ pipeline {
     }
     stages {
         stage('Test') {
-            checkout scm
             steps {
+                checkout scm
                 sh 'dotnet --version'
             }
         }
