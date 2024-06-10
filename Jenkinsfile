@@ -10,6 +10,7 @@ pipeline {
             steps {
                 checkout scm
                 sh 'dotnet --version'
+                sh 'ls'
             }
         }
     }
