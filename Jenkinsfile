@@ -10,7 +10,10 @@ pipeline {
             steps {
                 checkout scm
                 sh 'dotnet --version'
-                sh 'ls'
+                sh ''' 
+                #!/bin/bash
+                ./jenkins_test.bash
+                '''
             }
         }
     }
