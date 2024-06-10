@@ -2,10 +2,10 @@
 
 # Path to the test results XML file
 RESULTS_FILE="testresults.xml"
-RESULTS_PATH="./TestResults/$RESULTS_FILE"
+RESULTS_PATH="./test/TestResults/$RESULTS_FILE"
 
 # Run dotnet test and output results to the specified file
-dotnet test --logger "trx;LogFileName=$RESULTS_FILE"
+dotnet test ./test/dvr_api_tests.csproj --logger "trx;LogFileName=$RESULTS_FILE"
 
 # Check if the test results file was created
 if [[ ! -f "$RESULTS_PATH" ]]; then
