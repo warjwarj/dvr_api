@@ -9,8 +9,8 @@ pipeline {
         stage('Test') {
             steps {
                 checkout scm
-                sh 'source /etc/.bashrc'
-                sh ''' 
+                bash 'source /etc/.bashrc'
+                bash ''' 
                 #!/bin/bash
                 dotnet --version
                 chmod +x jenkins_test.bash
