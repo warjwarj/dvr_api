@@ -19,7 +19,7 @@ pipeline {
                 sh 'echo $SHELL'
                 sh '''#!/bin/bash
                 set -e
-                dotnet --version
+                /opt/.dotnet/dotnet --version
                 ./jenkins_test.bash
                 '''
             }
