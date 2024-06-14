@@ -16,11 +16,19 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'ls -la'
-                sh 'echo $SHELL'
                 sh '''#!/bin/bash
-                set -e
-                /opt/.dotnet/dotnet --version
                 ./jenkins_test.bash
+                '''
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'ls -la'
+                sh '''#!/bin/bash
+                cd dvr_api
+                dotnet publish
+                chmod +x bin/Debug/net7.0/publish/dvr_api.exe
+                ./dvr_api.exe
                 '''
             }
         }
