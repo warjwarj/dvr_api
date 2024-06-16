@@ -28,7 +28,7 @@ pipeline {
                 cd dvr_api
                 dotnet publish
                 chmod +x bin/Release/net8.0/publish/dvr_api
-                ./dvr_api
+                bin/Release/net8.0/publish/dvr_api
                 '''
             }
         }
